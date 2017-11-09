@@ -11,3 +11,40 @@
 
     position: relative;
 }
+
+/******baggrund slut**********/
+
+/******william start**********/
+
+.william {
+    background-image: url(imge/personer/William.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 20vw;
+    top: 25vw;
+    left: 30vw;
+
+    animation-name: william_kf;
+    animation-duration: 20s;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+.william_ser_telefon {}
+
+
+.telefon {
+    background-image: url(imge/);
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 20vw;
+    top: 25vw;
+    left: 30vw;
+}
+
+
+.henrik .brian
