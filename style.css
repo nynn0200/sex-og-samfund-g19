@@ -1,15 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .baggrund {
-    background-image: url(imge/scene/klasselokale.svg);
-    background-size: cover;
-    width: 100%;
-    height: 45vw;
+	background-image: url(imge/scene/klasselokale.svg);
+	background-size: cover;
+	width: 100%;
+	height: 45vw;
 
-    position: relative;
+	position: relative;
 }
 
 /******baggrund slut**********/
@@ -17,34 +17,55 @@
 /******william start**********/
 
 .william {
-    background-image: url(imge/personer/William.svg);
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 40vw;
-    height: 20vw;
-    top: 25vw;
-    left: 30vw;
+	background-image: url(imge/personer/William.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 20vw;
+	top: 25vw;
+	left: 30vw;
 
-    animation-name: william_kf;
-    animation-duration: 20s;
+	animation-name: william_kf;
+	animation-duration: 20s;
 
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
 }
 
 .william_ser_telefon {}
 
 
-.telefon {
-    background-image: url(imge/);
-    position: absolute;
-    background-repeat: no-repeat;
-    width: 40vw;
-    height: 20vw;
-    top: 25vw;
-    left: 30vw;
+.william .telefon {
+	background-image: url(imge/phones.svg);
+	background-size: 200%;
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 2.1vw;
+	height: 4vw;
+	top: 2vw;
+	animation-name: sprite_loop;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(2);
+
+
+
+
 }
+
+@keyframes sprite_loop {
+	from {
+		background-position: right;
+
+	}
+	to {
+		background-position: right;
+	}
+}
+
+
+
+
 
 
 .henrik .brian
