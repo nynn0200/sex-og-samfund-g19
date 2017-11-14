@@ -36,7 +36,7 @@
     background-image: url(imge/scene/SVG/sceneendelig.svg);
     background-size: cover;
     width: 100%;
-    height: 60vw;
+    height: 45vw;
 
     position: relative;
 }
@@ -58,9 +58,9 @@
     background-image: url(imge/personer/William.svg);
     position: absolute;
     background-repeat: no-repeat;
-    width: 40vw;
-    height: 32.5vw;
-    top: 27vw;
+    width: 20vw;
+    height: 26vw;
+    top: 22vw;
     left: 21vw;
 
 
@@ -116,10 +116,10 @@
     background-image: url(imge/personer/Henrik.svg);
     position: absolute;
     background-repeat: no-repeat;
-    width: 22vw;
-    height: 23vw;
-    top: 18vw;
-    left: 48vw;
+    width: 21vw;
+    height: 22vw;
+    top: 15.99vw;
+    left: 44vw;
 
     animation-name: henrik_kf;
     animation-duration: 20s;
@@ -232,8 +232,8 @@
     background-repeat: no-repeat;
     width: 24vw;
     height: 27.5vw;
-    top: 20vw;
-    left: 78vw;
+    top: 17.5vw;
+    left: 72.5vw;
 
 }
 
@@ -304,8 +304,8 @@
     height: 55vw;
     width: 69vw;
     position: absolute;
-    top: -60vw;
-    right: 15vw;
+    top: -50vw;
+    left: -10vw;
     z-index: 100;
 }
 
@@ -313,7 +313,7 @@
 
 .telefonhaand .slet {
 
-    background-image: url(imge/knapper/);
+    background-image: url(imge/knapper/sletchat.svg);
     width: 30.5vw;
     height: 11vw;
     position: absolute;
@@ -326,7 +326,7 @@
 }
 
 .telefonhaand .send {
-    background-image: url(imge/knapper/%C3%A5bengruppe.svg);
+    background-image: url(imge/knapper/%C3%A5benchat.svg);
     width: 30.5vw;
     height: 11vw;
     position: absolute;
