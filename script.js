@@ -3,6 +3,7 @@ $(document).ready(function () {
 	$('.scene2').hide()
 	$('.scene3').hide()
 
+
 	var audio = $("#mysoundclip")[0];
 
 	$("button").click(function () {
@@ -10,6 +11,8 @@ $(document).ready(function () {
 		$('.forside').hide()
 		$('.baggrund').hide()
 		$('.scene1').show()
+		$('.henrik').addClass('sidder_ned')
+		$('.henrik').addClass('telefon')
 		$('.scene2').hide()
 		$('.scene3').hide()
 
@@ -42,6 +45,13 @@ $(document).ready(function () {
 		$('.scene1').show()
 		$('.scene2').hide()
 		$('.scene3').hide()
+		$('.henrik').addClass('henrik_move_right')
+		$('.henrik').addClass('walkcycle')
+		$('.henrik').removeClass('sidder_ned')
+
+
+
+		$('.scene3').show(10000)
 
 	});
 });

@@ -113,7 +113,7 @@
 
 .henrik {
 
-	background-image: url(imge/personer/Henrik.svg);
+
 	position: absolute;
 	background-repeat: no-repeat;
 	width: 22vw;
@@ -128,6 +128,62 @@
 	animation-direction: alternate-reverse;
 	animation-timing-function: linear;
 }
+
+.sidder_ned {
+	background-image: url(imge/personer/Henrik.svg);
+}
+
+
+
+
+.walkcycle {
+	width: 12vw;
+	height: 28vw;
+	background-size: 400%;
+	background-image: url(imge/henrik/henrik_walkcycle_v3.svg);
+	animation-name: henrik_walkcycle_kf;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(4);
+}
+
+.henrik_move_right {
+	animation-name: henrik_move_right_kf;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+
+}
+
+@keyframes henrik_move_right_kf {
+	0% {
+		left: 110%;
+		top: 50%;
+	}
+
+	50% {
+		left: 60%;
+		top: 50%;
+	}
+
+	100% {
+		left: 49vw;
+		top: 30%;
+	}
+}
+
+
+@keyframes henrik_walkcycle_kf {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: -400%;
+	}
+}
+
 
 .henrik .telefon {
 	background-image: url(imge/knapper/telefon%20bord.svg);
@@ -150,43 +206,8 @@
 }
 
 
-.henrik_walkcycle {
-	animation-name: henrik_walkcycle_kf;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-timing-function: steps(4);
-}
 
-@keyframes henrik_walkcycle_kf {
-	0% {
-		background-position: 0%;
-	}
 
-	100% {
-		background-position: -400%;
-	}
-}
-
-#henrik {
-	position: absolute;
-}
-
-.henrik_move_right {
-	animation-name: henrik_move_right_kf;
-	animation-duration: 5s;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-
-}
-
-@keyframes henrik_move_right_kf {
-	0% {
-		left: 0%;
-	}
-	100% {
-		left: 90%;
-	}
-}
 
 .henrik .tale {
 
@@ -293,6 +314,8 @@
 	width: 100%;
 	height: 60vw;
 	position: absolute;
+	top: 0vw;
+	z-index: 10000000;
 
 
 }
@@ -380,8 +403,8 @@
 	height: 20vw;
 	width: 20vw;
 	position: absolute;
-	left:20vw;
-	top:39vw;
+	left: 20vw;
+	top: 39vw;
 }
 
 .tlfslet {
@@ -390,6 +413,6 @@
 	height: 20vw;
 	width: 20vw;
 	position: absolute;
-	right:7vw;
-	top:39vw;
+	right: 7vw;
+	top: 39vw;
 }
