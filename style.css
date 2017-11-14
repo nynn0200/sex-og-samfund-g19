@@ -44,7 +44,6 @@
 
 .scene2 {
 	width: 100%;
-	height: 60vw;
 	background-color: white;
 	position: absolute;
 
@@ -193,14 +192,14 @@
 
 	background-image: url(imge/talebob/talebob.svg);
 	position: absolute;
-	width: 2.5vw;
+	width: 3.5vw;
 	height: 2vw;
 	transform: scale(4);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	z-index: 2;
-	right: 20vw;
-	top: -5vw;
+	right: 10vw;
+	top: -3vw;
 
 
 	animation-name: henrik_tale_kf;
@@ -269,7 +268,7 @@
 
 
 	animation-name: brian_tale_kf;
-	animation-duration: 6s;
+	animation-duration: 2s;
 	animation-timing-function: steps(1);
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
@@ -302,11 +301,12 @@
 	background-image: url(imge/scene/hand_med_telefon.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 50vw;
-	width: 63vw;
+	height: 55vw;
+	width: 69vw;
 	position: absolute;
-	top: 0vw;
+	top: -60vw;
 	right: 15vw;
+	z-index: 100;
 }
 
 
@@ -342,8 +342,6 @@
 
 /******henrik start**********/
 
-
-
 .privatsnak {
 
 	position: absolute;
@@ -374,4 +372,24 @@
 	color: white;
 	text-decoration: none;
 
+}
+
+.tlfsend {
+	background-image: url(imge/knapper/gruppe.svg);
+	background-repeat: no-repeat;
+	height: 20vw;
+	width: 20vw;
+	position: absolute;
+	left:20vw;
+	top:39vw;
+}
+
+.tlfslet {
+	background-image: url(imge/knapper/sletbesked.svg);
+	background-repeat: no-repeat;
+	height: 20vw;
+	width: 20vw;
+	position: absolute;
+	right:7vw;
+	top:39vw;
 }
