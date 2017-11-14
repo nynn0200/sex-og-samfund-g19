@@ -5,14 +5,15 @@
 
 
 
-/******baggrund slut**********/
 
-.baggrund {
+
+.forside {
 	background-image: url(imge/scene/SVG/startscreen.svg);
 	width: 100%;
 	height: 60vw;
 	position: absolute;
 	background-repeat: no-repeat;
+
 
 }
 
@@ -29,8 +30,10 @@
 
 }
 
+
+
 .scene1 {
-	background-image: url(imge/scene/klasselokale.svg);
+	background-image: url(imge/scene/SVG/sceneendelig.svg);
 	background-size: cover;
 	width: 100%;
 	height: 60vw;
@@ -48,8 +51,246 @@
 }
 
 
+
+/******william start**********/
+
+.william {
+
+	background-image: url(imge/personer/William.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 27vw;
+	top: 31vw;
+	left: 21vw;
+
+
+
+	animation-name: william_kf;
+	animation-duration: 20s;
+
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+}
+
+
+
+.william .telefon {
+	background-image: url(imge/phones.svg);
+	background-size: 200%;
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 2.1vw;
+	height: 4vw;
+	top: 4vw;
+	animation-name: sprite_loop;
+	animation-duration: 1.5s;
+	animation-timing-function: steps(2);
+
+
+
+
+}
+
+
+@keyframes sprite_loop {
+	from {
+		background-position: right;
+
+	}
+	to {
+		background-position: right;
+	}
+
+}
+
+
+
+
+/******william slut**********/
+
+/******henrik start**********/
+
+.henrik {
+
+	background-image: url(imge/personer/Henrik.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 22vw;
+	height: 18.5vw;
+	top: 21vw;
+	left: 49vw;
+
+	animation-name: henrik_kf;
+	animation-duration: 20s;
+
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+}
+
+.henrik .telefon {
+	background-image: url(imge/knapper/telefon%20bord.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 1.5vw;
+	height: 2vw;
+	top: 6.5vw;
+	left: 6.9vw;
+
+	transform: rotate(130deg) skew(10deg) skew(20deg);
+}
+
+#henrik_sprite {
+	background-image: url(henrik_walkcycle.svg);
+	width: 10vw;
+	height: 25vw;
+	background-size: 400%;
+
+}
+
+
+.henrik_walkcycle {
+	animation-name: henrik_walkcycle_kf;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(4);
+}
+
+@keyframes henrik_walkcycle_kf {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: -400%;
+	}
+}
+
+#henrik {
+	position: absolute;
+}
+
+.henrik_move_right {
+	animation-name: henrik_move_right_kf;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes henrik_move_right_kf {
+	0% {
+		left: 0%;
+	}
+	100% {
+		left: 90%;
+	}
+}
+
+.henrik .tale {
+
+	background-image: url(imge/talebob/talebob.svg);
+	position: absolute;
+	width: 2.5vw;
+	height: 2vw;
+	transform: scale(4);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: 2;
+	right: 20vw;
+	top: -5vw;
+
+
+	animation-name: henrik_tale_kf;
+	animation-duration: 6s;
+	animation-timing-function: steps(1);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+
+@keyframes henrik_tale_kf {
+
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(5);
+	}
+}
+
+
+
+/******brian start**********/
+
+.brian {
+	background-image: url(imge/brian/SVG/brianside.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 19vw;
+	height: 22vw;
+	top: 24vw;
+	left: 77vw;
+
+}
+
+
+.brian .telefon {
+	background-image: url(imge/knapper/telefon%20bord.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 2vw;
+	height: 2vw;
+	top: 7.5vw;
+	right: 18.6vw;
+
+
+
+	transform: rotate(-16deg) skew(10deg) skew(20deg);
+
+}
+
+.brian .tale {
+
+	background-image: url(imge/talebob/sehaha.svg);
+	position: absolute;
+	width: 2.5vw;
+	height: 2vw;
+	transform: scale(4);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: 2;
+	right: 20vw;
+	top: -5vw;
+
+
+	animation-name: brian_tale_kf;
+	animation-duration: 6s;
+	animation-timing-function: steps(1);
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+}
+
+
+@keyframes brian_tale_kf {
+
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(5);
+	}
+}
+
+
 .scene3 {
-	background-image: url(imge/scene/SVG/Speakscreen.svg);
+	background-image: url(imge/scene/end.svg);
 	width: 100%;
 	height: 60vw;
 	position: absolute;
@@ -68,57 +309,69 @@
 	right: 15vw;
 }
 
-/******william start**********/
 
-.william {
-	background-image: url(imge/personer/William.svg);
+
+.telefonhaand .slet {
+
+	background-image: url(imge/knapper/sletbesked.svg);
+	width: 30.5vw;
+	height: 11vw;
 	position: absolute;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
-	width: 40vw;
-	height: 20vw;
-	top: 25vw;
-	left: 30vw;
+	top: 21.4vw;
+	left: 15vw;
 
-	animation-name: william_kf;
-	animation-duration: 20s;
-
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
-	animation-timing-function: linear;
 }
 
-.william_ser_telefon {}
-
-
-.william .telefon {
-	background-image: url(imge/phones.svg);
-	background-size: 200%;
+.telefonhaand .send {
+	background-image: url(imge/knapper/%C3%A5bengruppe.svg);
+	width: 30.5vw;
+	height: 11vw;
 	position: absolute;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
-	width: 2.1vw;
-	height: 4vw;
-	top: 2vw;
-	animation-name: sprite_loop;
-	animation-duration: 1.5s;
-	animation-timing-function: steps(2);
-
-
+	top: 21.4vw;
+	left: 15vw;
 
 
 }
 
-@keyframes sprite_loop {
-	from {
-		background-position: right;
 
-	}
-	to {
-		background-position: right;
-	}
+/******henrik start**********/
+
+
+
+.privatsnak {
+
+	position: absolute;
+	top: 34.1vw;
+	font-size: 3.2em;
+	right: 27vw;
+	color: white;
+	text-decoration: none;
+
 }
 
+.faceebook {
 
+	position: absolute;
+	top: 41.6vw;
+	font-size: 3em;
+	right: 24vw;
+	color: white;
+	text-decoration: none;
 
+}
 
+.instagram {
+	position: absolute;
+	top: 46.6vw;
+	font-size: 3em;
+	right: 24vw;
+	color: white;
+	text-decoration: none;
 
-.henrik .brian
+}
