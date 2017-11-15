@@ -142,7 +142,7 @@
 	background-size: 400%;
 	background-image: url(imge/henrik/henrik_walkcycle_v3.svg);
 	animation-name: henrik_walkcycle_kf;
-	animation-duration: 1s;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-timing-function: steps(4);
 }
@@ -154,6 +154,16 @@
 	animation-fill-mode: forwards;
 
 
+}
+
+@keyframes henrik_walkcycle_kf {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: -400%;
+	}
 }
 
 @keyframes henrik_move_right_kf {
@@ -174,15 +184,6 @@
 }
 
 
-@keyframes henrik_walkcycle_kf {
-	0% {
-		background-position: 0%;
-	}
-
-	100% {
-		background-position: -400%;
-	}
-}
 
 
 .henrik .telefon {
@@ -219,8 +220,8 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 	z-index: 2;
-	right: 10vw;
-	top: -3vw;
+	right: 8vw;
+	top: -7vw;
 
 
 	animation-name: henrik_tale_kf;
